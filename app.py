@@ -14,7 +14,7 @@ st.markdown("Hey there! 📚 Excited about finding your next great read? BookHub
 st.subheader("Enter your Name")
 user_name = st.text_input("")
 Item_based = pd.read_csv('https://github.com/aasimsk98/BookHub/blob/master/item_based.csv?raw=true')
-Item_based1 = pd.read_csv('https://github.com/aasimk98/BookHub/blob/master/item_based1.csv?raw=true')
+Item_based1 = pd.read_csv('https://github.com/aasimsk98/BookHub/blob/master/item_based1.csv?raw=true')
 if user_name:
  ## Define the options
  options = ['Overall Library', 'Exclusive MU Engineering Library']
@@ -274,4 +274,5 @@ if user_name:
    s="⭐"
    st.subheader(f"{d} for {user_name} {sm}{b}{sm}")
    for i in range(len(final)):
+
     st.write(f"{b}{final.iloc[i]['Book-Title']}{b}---{p}{final.iloc[i]['Book-Author']}{p}")   
